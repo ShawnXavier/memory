@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>For You ❤️</title>
+
   <style>
     * {
       margin: 0;
@@ -23,8 +24,7 @@
       position: relative;
     }
 
-    .section img,
-    .section video {
+    .section img {
       height: 100%;
       width: 100%;
       object-fit: cover;
@@ -32,10 +32,7 @@
 
     .overlay {
       position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
+      inset: 0;
       background: rgba(0,0,0,0.45);
       display: flex;
       justify-content: center;
@@ -62,8 +59,14 @@
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .end {
@@ -84,12 +87,12 @@
     .end p {
       font-size: 1.2rem;
     }
-
   </style>
 </head>
+
 <body>
 
-  <!-- SECTION 1: PHOTO -->
+  <!-- SECTION 1 -->
   <div class="section">
     <img src="photo1.jpg" alt="Memory 1">
     <div class="overlay">
@@ -97,15 +100,15 @@
     </div>
   </div>
 
-  <!-- SECTION 2: VIDEO -->
+  <!-- SECTION 2 -->
   <div class="section">
-    <img src="photo3.JPG" alt="Memory 2">
+    <img src="photo3.jpg" alt="Memory 2">
     <div class="overlay">
       <p>Some people quietly become your favorite part of every day.</p>
     </div>
   </div>
 
-  <!-- SECTION 3: PHOTO -->
+  <!-- SECTION 3 -->
   <div class="section">
     <img src="photo2.jpg" alt="Memory 3">
     <div class="overlay">
@@ -113,7 +116,7 @@
     </div>
   </div>
 
-  <!-- SECTION 4: VIDEO -->
+  <!-- SECTION 4 -->
   <div class="section">
     <img src="photo4.jpg" alt="Memory 4">
     <div class="overlay">
