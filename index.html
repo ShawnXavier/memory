@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You ❤️</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: black;
+      overflow-x: hidden;
+    }
+
+    .section {
+      height: 100vh;
+      width: 100vw;
+      position: relative;
+    }
+
+    .section img,
+    .section video {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0,0,0,0.45);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .overlay h1,
+    .overlay p {
+      color: white;
+      animation: fadeIn 2s ease;
+    }
+
+    .overlay h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .overlay p {
+      font-size: 1.3rem;
+      max-width: 700px;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .end {
+      background: linear-gradient(135deg, #ff4d6d, #ff8fab);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 40px;
+    }
+
+    .end h2 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .end p {
+      font-size: 1.2rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- SECTION 1: PHOTO -->
+  <div class="section">
+    <img src="photo1.jpg" alt="Memory 1">
+    <div class="overlay">
+      <h1>Sharvani ❤️</h1>
+    </div>
+  </div>
+
+  <!-- SECTION 2: VIDEO -->
+  <div class="section">
+    <img src="photo3.JPG" alt="Memory 2">
+    <div class="overlay">
+      <p>Some people quietly become your favorite part of every day.</p>
+    </div>
+  </div>
+
+  <!-- SECTION 3: PHOTO -->
+  <div class="section">
+    <img src="photo2.jpg" alt="Memory 3">
+    <div class="overlay">
+      <p>Beautiful souls aren’t meant to be sad or alone — especially you.</p>
+    </div>
+  </div>
+
+  <!-- SECTION 4: VIDEO -->
+  <div class="section">
+    <img src="photo4.jpg" alt="Memory 4">
+    <div class="overlay">
+      <p>If life is a journey, I’d like to walk beside you — wherever it leads.</p>
+    </div>
+  </div>
+
+  <!-- FINAL SECTION -->
+  <div class="section end">
+    <div>
+      <h2>Just a little piece of my heart 💖</h2>
+      <p>This is simply my way of saying how much you mean to me — today and always.</p>
+      <p style="margin-top:20px; font-weight:bold;">— Shawn</p>
+    </div>
+  </div>
+
+</body>
+</html>
